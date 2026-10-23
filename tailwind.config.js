@@ -1,0 +1,65 @@
+/** @type {import('tailwindcss').Config} */
+// Ranglar, shriftlar va o'lchamlar Google Stitch'dagi "Editorial Serenity" dizayn tizimidan olingan (DESIGN.md).
+export default {
+  content: ['./index.html', './src/**/*.{js,jsx}'],
+  theme: {
+    extend: {
+      colors: {
+        background: '#faf9f6',
+        surface: '#faf9f6',
+        'surface-container-lowest': '#ffffff',
+        'surface-container-low': '#f4f3f1',
+        'surface-container': '#efeeeb',
+        'surface-container-high': '#e9e8e5',
+        'surface-container-highest': '#e3e2e0',
+        'on-surface': '#1a1c1a',
+        'on-surface-variant': '#454843',
+        outline: '#757873',
+        'outline-variant': '#c5c7c1',
+        primary: '#090a08',
+        'on-primary': '#ffffff',
+        secondary: '#566250',
+        'secondary-container': '#d9e7d0',
+        'on-secondary-container': '#5c6856',
+      },
+      borderRadius: {
+        DEFAULT: '0.125rem',
+        lg: '0.25rem',
+        xl: '0.5rem',
+        full: '9999px',
+      },
+      spacing: {
+        'space-xs': '0.25rem',
+        'space-sm': '0.5rem',
+        'space-md': '1rem',
+        'space-lg': '1.75rem',
+        'space-xl': '3rem',
+        'margin-mobile': '1.25rem',
+      },
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'display-lg': ['64px', { lineHeight: '72px', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'headline-xl': ['48px', { lineHeight: '56px', letterSpacing: '-0.02em', fontWeight: '400' }],
+        'headline-xl-mobile': ['32px', { lineHeight: '40px', letterSpacing: '-0.01em', fontWeight: '400' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.01em', fontWeight: '400' }],
+        'headline-lg-mobile': ['26px', { lineHeight: '34px', fontWeight: '400' }],
+        'headline-md': ['24px', { lineHeight: '32px', fontWeight: '500' }],
+        'headline-sm': ['20px', { lineHeight: '28px', fontWeight: '500' }],
+        'title-md': ['18px', { lineHeight: '26px', letterSpacing: '-0.01em', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '30px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', fontWeight: '400' }],
+        'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.06em', fontWeight: '500' }],
+        'label-sm': ['11px', { lineHeight: '14px', letterSpacing: '0.08em', fontWeight: '600' }],
+      },
+      boxShadow: {
+        soft: '0 8px 24px -8px rgba(32,33,31,0.04)',
+        lift: '0 12px 36px -12px rgba(32,33,31,0.06)',
+      },
+    },
+  },
+  plugins: [],
+}
